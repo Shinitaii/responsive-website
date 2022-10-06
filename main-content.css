@@ -1,0 +1,25 @@
+/*content*/
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content div{
+    text-align: center;
+}
+
+.main-content{
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+    height: 100vh;
+    box-shadow: -1px -1px 8px black;
+}
+
+.side-content{
+    margin: 5px;
+    padding: 5px;
+    width: 20%;
+    height: 100vh;
+    box-shadow: -1px -1px 8px black;
+}

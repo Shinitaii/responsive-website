@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 /*header*/
@@ -37,20 +37,81 @@
 }
 
 .nav-items button{
-    padding: 20px 30px;
+    padding: 15px 30px;
     border: 0;
-    margin: auto 0;
-    background: transparent;
+    margin: 5px 0 0 0 ;
+    background: #0c1e36;
     color: #fff;
     font-size: 20px;
+    cursor: pointer
 }
 
-/*content*/
-
-.content{
-    
+.nav-items button:hover{
+    background-color: #112847;
 }
 
+/* footer */
+
+.footer{
+    position: absolute;
+    float: bottom;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-content h3{
+    padding: 5px;
+    font-size: 24px;
+}
+
+.footer-content p{
+    padding-bottom: 5px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px 0 3px 0;
+}
+
+.links a, img{
+    font-size: 2px;
+    width: 30px;
+}
+
+.links li{
+    margin: 0 10px;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    float:left;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+/*js moment*/
 @media only screen and (max-width:800px) {
     .nav{
         text-align: center;
@@ -60,7 +121,7 @@
     .nav-close{
         display: block;
         font-size: 30px;
-        text-align: right;
+        text-align: left;
         padding: 15px 15px;
         margin-bottom: 20px;
         cursor: pointer;
@@ -76,8 +137,10 @@
         margin: 0;
         height: 100%;
         box-shadow: -1px -1px 8px black;
-        width:200px;
+        width:175px;
         transition: 1s;
+        z-index: 2;
+        overflow-y: auto;
     }
 
     .nav-menu{
