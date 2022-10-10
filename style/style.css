@@ -46,8 +46,12 @@
     cursor: pointer
 }
 
-.nav-items button:hover{
+.nav-items button:hover, .nav-menu:hover{
     background-color: #112847;
+}
+
+.nav-menu{
+    margin: auto;
 }
 
 /* footer */
@@ -118,12 +122,14 @@
         margin: 20px auto;
     }
 
+    .nav, .nav-close, .nav-items{
+        transition: 1s;
+    }
+
     .nav-close{
-        display: block;
+        display: flex;
+        float: right;
         font-size: 30px;
-        text-align: left;
-        padding: 15px 15px;
-        margin-bottom: 20px;
         cursor: pointer;
     }
 
@@ -137,8 +143,7 @@
         margin: 0;
         height: 100%;
         box-shadow: -1px -1px 8px black;
-        width:175px;
-        transition: 1s;
+        width:145px;
         z-index: 2;
         overflow-y: auto;
     }
